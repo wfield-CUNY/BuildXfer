@@ -1,7 +1,7 @@
 {
 	"name": "voteLayerConfig",
 	"config": {
-		"postgres-tablename": "nytimes2020precinctresults_nc",
+		"postgres-tablename": "nytimes2020precinctresults_ma",
 		"layer-opacity": 0.8,
 		"title": "<span class='text-h6'>Overlay: 2020 presidential election vote share</span><br />",
 		"titleplaintext": "Overlay: 2020 vote share",

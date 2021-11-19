@@ -1,14 +1,14 @@
 {
 	"name": "mainConfig",
 	"state": {
-		"abbrev": "nc",
-		"display-name": "North Carolina",
-		"state-fips":"37",
-		"url":"northcarolina.redistrictingandyou.org",
+		"abbrev": "pa",
+		"display-name": "Pennsylvania",
+		"state-fips":"42",
+		"url":"pennsylvania.redistrictingandyou.org",
 		"avg-pops":{
-			"cd":"745,671",
-			"ad":"86,995",
-			"sd":"208,788"
+			"cd":"???",
+			"ad":"???",
+			"sd":"???"
 		},
 		"body-display-names":{
 			"cd":"Congressional",
@@ -18,9 +18,9 @@
 	},
 	"api": {
 		"hosts": {
-			"api": "https://dev.urbanresearchmaps.org/NC-Redistrict-API/v1/",
-			"DEV": "https://dev.urbanresearchmaps.org/NC-Redistrict-API/v1/",
-			"PROD": "https://www.urbanresearchmaps.org/NC-Redistrict-API/v1/",
+			"api": "https://dev.urbanresearchmaps.org/PA-Redistrict-API/v1/",
+			"DEV": "https://dev.urbanresearchmaps.org/PA-Redistrict-API/v1/",
+			"PROD": "https://www.urbanresearchmaps.org/PA-Redistrict-API/v1/",
 			"propublica": "https://api.propublica.org",
 			"openstates": "https://v3.openstates.org/people"
 		},
@@ -33,12 +33,12 @@
 	},
 	"mapConfig": {
 		"container": "main-map",
-		"style": "mapbox://styles/cunycur/ckv2h4cxs3qh014p7yceruqpu",
+		"style": "mapbox://styles/cunycur/ckurr21j70yid17s01t7ulyyw",
 		"center": [
-			-79.893,
-			35.685
+			-77.302,
+			40.999
 		],
-		"zoom": 5.75,
+		"zoom": 6.75,
 		"hash": "&map",
 		"logoPosition": "bottom-right",
 		"attributionControl": true,
@@ -46,27 +46,22 @@
 		"antialias": true
 	},
 	"addressSearchBounds": {
-		"west": -84.5,
-		"east": -75.34,
-		"south": 33.7,
-		"north": 36.6
+		"west": -80.6,
+		"east": -74.6,
+		"south": 39.69,
+		"north": 42.5
 	},
 	"defaultDistrictType": "cd",
 	"hideCurrentDistrictsFromDropdown": true,
-	"share":{
-		"email-html":"",
-		"embed-width":"850px",
-		"embed-height":"650px"
-	},
 	"map-logos":[{
-		"img-src":"./nccounts.png",
-		"link": "https://www.nccounts.org/"
+		"img-src":"./DrawingDemocracy.png",
+		"link": "https://www.madrawingdemocracy.org/"
 	}],
 	"toggleable-layers": [
 		{
 			"layer-ids": [
-				"nc-county20",
-				"nc-county20-label"
+				"ma-county20",
+				"ma-county20-label"
 			],
 			"layer-display": "Counties",
 			"imgSrc": "legend_counties_75.png",
@@ -76,9 +71,20 @@
 		},
 		{
 			"layer-ids": [
-				"nc-place20",
-				"nc-place20-label",
-				"nc-place20-fill"
+				"ma-cosub20-noplace",
+				"ma-cosub20-label"
+			],
+			"layer-display": "Towns",
+			"on-load-event": null,
+			"imgSrc": "legend_towns_75.png",
+			"tag": "cosub",
+			"active": true
+		},
+		{
+			"layer-ids": [
+				"ma-place20",
+				"ma-place20-label",
+				"ma-place20-fill"
 			],
 			"layer-display": "Cities / Incorp. Places",
 			"imgSrc": "legend_places_75.png",
@@ -96,7 +102,7 @@
 		},
 		{
 			"layer-ids": [
-				"nc-block-groups"
+				"ma-block-groups"
 			],
 			"layer-display": "Voting Age Race/Hispanic origin (2020, by block group)",
 			"on-load-event": "get-block-group-vap",
@@ -106,21 +112,11 @@
 		},
 		{
 			"layer-ids": [
-				"nytimes2020precinctresults_nc"
+				"nytimes2020precinctresults_ma"
 			],
 			"layer-display": "2020 Presidential vote share by precinct (via the NY Times)",
 			"on-load-event": "get-vote-results",
 			"tag": "vote-results",
-			"dynamic-legend":true,
-			"active": true
-		},
-		{
-			"layer-ids": [
-				"coi_ncrepresentable_20211118"
-			],
-			"layer-display": "Communities Of Interest (COIs)",
-			"on-load-event": "get-cois",
-			"tag": "cois",
 			"dynamic-legend":true,
 			"active": true
 		}
