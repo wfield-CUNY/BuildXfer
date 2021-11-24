@@ -1,0 +1,253 @@
+{
+    "name": "VAPConfig",
+    "config": {
+        "layer-opacity":0.8,
+        "postgres-tablename": "nys_bg20_vap20_filter",
+        "h": {
+            "title": "<span class='text-h6'>Hispanic CVAP</span><br />",
+            "titleplaintext": "Hispanic CVAP",
+            "description": "Hispanic CVAP",
+            "scale": [
+                {
+                    "color": "#BAE3B3",
+                    "step": [
+                        0.25,
+                        false
+                    ]
+                },
+                {
+                    "color": "#74C477",
+                    "step": [
+                        0.25,
+                        true,
+                        0.5,
+                        false
+                    ]
+                },
+                {
+                    "color": "#31A353",
+                    "step": [
+                        0.5,
+                        true,
+                        0.75,
+                        false
+                    ]
+                },
+                {
+                    "color": "#006E2C",
+                    "step": [
+                        0.75,
+                        true,
+                        1,
+                        true
+                    ]
+                }
+            ]
+        },
+        "w": {
+            "title": "<span class='text-h6'>White Non-Hispanic CVAP</span><br />",
+            "titleplaintext": "White Non-Hispanic CVAP",
+            "description": "White Non-Hispanic CVAP",
+            "scale": [
+                {
+                    "color": "#BED8E8",
+                    "step": [
+                        0.25,
+                        false
+                    ]
+                },
+                {
+                    "color": "#6BAFD6",
+                    "step": [
+                        0.25,
+                        true,
+                        0.5,
+                        false
+                    ]
+                },
+                {
+                    "color": "#3183BD",
+                    "step": [
+                        0.5,
+                        true,
+                        0.75,
+                        false
+                    ]
+                },
+                {
+                    "color": "#08529C",
+                    "step": [
+                        0.75,
+                        true,
+                        1,
+                        true
+                    ]
+                }
+            ]
+        },
+        "b": {
+            "title": "<span class='text-h6'>Black CVAP</span><br />",
+            "titleplaintext": "Black CVAP",
+            "description": "Black CVAP",
+            "scale": [
+                {
+                    "color": "#FCBF86",
+                    "step": [
+                        0.25,
+                        false
+                    ]
+                },
+                {
+                    "color": "#FC8D3D",
+                    "step": [
+                        0.25,
+                        true,
+                        0.5,
+                        false
+                    ]
+                },
+                {
+                    "color": "#E6560E",
+                    "step": [
+                        0.5,
+                        true,
+                        0.75,
+                        false
+                    ]
+                },
+                {
+                    "color": "#A63703",
+                    "step": [
+                        0.75,
+                        true,
+                        1,
+                        true
+                    ]
+                }
+            ]
+        },
+        "as": {
+            "title": "<span class='text-h6'>Asian CVAP</span><br />",
+            "titleplaintext": "Asian CVAP",
+            "description": "Asian CVAP",
+            "scale": [
+                {
+                    "color": "#FAB4B9",
+                    "step": [
+                        0.25,
+                        false
+                    ]
+                },
+                {
+                    "color": "#F768A1",
+                    "step": [
+                        0.25,
+                        true,
+                        0.5,
+                        false
+                    ]
+                },
+                {
+                    "color": "#C41B89",
+                    "step": [
+                        0.5,
+                        true,
+                        0.75,
+                        false
+                    ]
+                },
+                {
+                    "color": "#7A0178",
+                    "step": [
+                        0.75,
+                        true,
+                        1,
+                        true
+                    ]
+                }
+            ]
+        },
+        "ai": {
+            "title": "<span class='text-h6'>American Indian / Alaska Native CVAP</span><br />",
+            "titleplaintext": "American Indian / Alaska Native CVAP",
+            "description": "American Indian / Alaska Native CVAP",
+            "scale": [
+                {
+                    "color": "#cbc9e2",
+                    "step": [
+                        0.25,
+                        false
+                    ]
+                },
+                {
+                    "color": "#9e9ac8",
+                    "step": [
+                        0.25,
+                        true,
+                        0.5,
+                        false
+                    ]
+                },
+                {
+                    "color": "#756bb1",
+                    "step": [
+                        0.5,
+                        true,
+                        0.75,
+                        false
+                    ]
+                },
+                {
+                    "color": "#54278f",
+                    "step": [
+                        0.75,
+                        true,
+                        1,
+                        true
+                    ]
+                }
+            ]
+        },
+        "other": {
+            "title": "<span class='text-h6'>American Indian / Alaska Native CVAP</span><br />",
+            "titleplaintext": "Other (ties, twoplus, other)",
+            "description": "Other (ties, twoplus, other)",
+            "scale": [
+                {
+                    "color": "#969696",
+                    "step": [
+                        0.25,
+                        false
+                    ]
+                },
+                {
+                    "color": "#737373",
+                    "step": [
+                        0.25,
+                        true,
+                        0.5,
+                        false
+                    ]
+                },
+                {
+                    "color": "#525252",
+                    "step": [
+                        0.5,
+                        true,
+                        0.75,
+                        false
+                    ]
+                },
+                {
+                    "color": "#252525",
+                    "step": [
+                        0.75,
+                        true,
+                        1,
+                        true
+                    ]
+                }
+            ]
+        }
+    }
+}
