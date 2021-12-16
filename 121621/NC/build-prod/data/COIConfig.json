@@ -1,0 +1,57 @@
+{
+	"name": "coiConfig",
+	"config": {
+		"postgres-tablename": "coi_ncrepresentable_20211118",
+		"layer-opacity": 0.8,
+		"title": "<span class='text-h6'>Communities of Interest (COIs)</span><br />",
+		"titleplaintext": "Communities of Interest (COIs)",
+		"description": "Communities of Interest (COIs) submitted through <a href='https://www.representable.org/map/GA/' target='_blank'>Representable</a>",
+		"style": {
+			"fill-color": "rgba(28,151,221,0.25)",
+			"fill-outline-color": "rgb(28,151,221)"
+		},
+		"labels": {
+			"paint-props": {
+				"text-opacity": 1,
+				"text-color": "#075e88",
+				"text-halo-color": "#fff",
+				"text-halo-width": 0.5
+			},
+			"layout-props": {
+				"visibility": "none",
+				"text-field": [
+					"get",
+					"entry_name"
+				],
+				"text-variable-anchor": [
+					"top",
+					"bottom",
+					"left",
+					"right"
+				],
+				"text-size": [
+					"interpolate",
+					[
+						"linear"
+					],
+					[
+						"zoom"
+					],
+					8,
+					10,
+					16,
+					20
+				],
+				"text-justify": "auto",
+				"text-max-width": 5,
+				"text-font": [
+					"literal",
+					[
+						"Lato Bold Italic",
+						"Arial Unicode MS Regular"
+					]
+				]
+			}
+		}
+	}
+}
